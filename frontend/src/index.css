@@ -132,3 +132,19 @@ body {
 .badge { padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
 .badge-green { background: #dcfce7; color: #166534; }
 .badge-red { background: #fee2e2; color: #991b1b; }
+
+/* --- Responsive Styling --- */
+@media (max-width: 768px) {
+  .app-layout { flex-direction: column; }
+  .sidebar { width: 100%; flex-direction: row; padding: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+  .sidebar-brand { padding: 0; margin-bottom: 10px; width: 100%; text-align: center; }
+  .sidebar-nav { flex-direction: row; flex-wrap: wrap; justify-content: center; width: 100%; }
+  .sidebar-nav a { padding: 8px 12px; border-left: none; border-bottom: 3px solid transparent; }
+  .sidebar-nav a.active { border-left: none; border-bottom-color: var(--primary); }
+  .sidebar-footer { display: flex; width: 100%; justify-content: space-between; align-items: center; padding: 10px 0 0 0; margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); }
+  .sidebar-user { margin-bottom: 0; }
+  .btn-logout { width: auto; padding: 6px 12px; }
+  .main-content { padding: 16px; }
+  .form-row { flex-direction: column; }
+  .data-table { display: block; overflow-x: auto; white-space: nowrap; }
+}

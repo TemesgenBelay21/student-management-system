@@ -22,7 +22,12 @@ export default function Sidebar() {
         <NavLink to="/attendance" className={({ isActive }) => isActive ? 'active' : ''}>Attendance</NavLink>
         <NavLink to="/academic" className={({ isActive }) => isActive ? 'active' : ''}>Academics</NavLink>
         <NavLink to="/finance" className={({ isActive }) => isActive ? 'active' : ''}>Finance</NavLink>
+        <NavLink to="/parent-portal" className={({ isActive }) => isActive ? 'active' : ''}>Parent Portal</NavLink>
       </nav>
+      <div style={{ padding: '10px 20px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <span style={{ fontSize: '18px' }}>🔔</span>
+        <span style={{ fontSize: '13px', background: 'var(--danger)', padding: '2px 6px', borderRadius: '10px' }}>3 New</span>
+      </div>
       <div className="sidebar-footer">
         <div className="sidebar-user">
           <div className="avatar">{user?.fullName?.charAt(0) || '?'}</div>
