@@ -11,6 +11,7 @@ import Attendance from './pages/Attendance'
 import Academic from './pages/Academic'
 import Finance from './pages/Finance'
 import ParentPortal from './pages/ParentPortal'
+import Notifications from './pages/Notifications'
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/academic" element={<ProtectedRoute><Academic /></ProtectedRoute>} />
           <Route path="/finance" element={<ProtectedRoute><Finance /></ProtectedRoute>} />
           <Route path="/parent-portal" element={<ProtectedRoute><ParentPortal /></ProtectedRoute>} />
+          <Route path="/notifications" element={<ProtectedRoute><Notifications /></ProtectedRoute>} />
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
         </Routes>
       </BrowserRouter>
